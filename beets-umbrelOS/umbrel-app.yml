@@ -1,23 +1,17 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
-version: "1.0.0"
-port: 4000
-description: >-
-  Add your app's description here.
-
-
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.
+id: "beets-umbrelOS"
+category: "media"
+name: "Beets"
+version: "1.6.0"
+tagline: "Music library manager and tagger"
+description: "Beets is the media library management system for music geeks. It automatically fetches metadata from MusicBrainz, transcodes audio, and organizes your music library."
+developer: "Beets"
+website: "https://beets.io"
+submitter: "Gavin"
+submission: "https://github.com/your-username/your-repo-name"
+repo: "https://github.com/beetbox/beets"
+support: "https://github.com/beetbox/beets/issues"
+port: 8337
+gallery: []
+path: ""
+defaultWithAuth: false
