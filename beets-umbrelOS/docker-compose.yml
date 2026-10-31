@@ -1,14 +1,18 @@
-version: "3.7"
-
+version: "3.8"
 services:
-
   app_proxy:
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: sparkles-hello-world_server_1
-      APP_PORT: 3000
-    
-  server:
-    image: getumbrel/community-app-store-hello-world:latest
-    user: "1000:1000"
-    init: true
+      APP_HOST: beets-umbrelOS_web_1
+      APP_PORT: 8337
+
+  web:
+    image: lscr.io/linuxserver/beets:latest
+    restart: on-failure
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${APP_DATA_DIR}/data/music:/music
+      - ${APP_DATA_DIR}/data/downloads:/downloads
