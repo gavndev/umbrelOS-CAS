@@ -2,7 +2,7 @@ version: "3.8"
 services:
   app_proxy:
     environment:
-      APP_HOST: beets-umbrelOS_web_1
+      APP_HOST: gavndev-CAS-beets_web_1
       APP_PORT: 8337
 
   web:
